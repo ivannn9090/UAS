@@ -228,7 +228,7 @@ export default {
       data.append("image", form.image);
       data.append("status", form.status);
 
-      this.$inertia.post("/posts", data);
+      this.$inertia.post("/posts", form);
       this.reset();
       this.editMode = false;
     },
